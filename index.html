@@ -23,7 +23,7 @@
 			<ul>
 				<li><a href="#ourHalls">Залы</a></li>
 				<li><a href="#about">О нас</a></li>
-				<li><a href="#booking">Бронь</a></li>
+				<li><a href="#git sbooking">Бронь</a></li>
 				<li><a href="#">Отзывы</a></li>
 				<li><a href="#contact">Контакты</a></li>
 			</ul>
@@ -84,18 +84,18 @@
 			<h2>Забронировать</h2>
 			<form action="https://jsonplaceholder.typicode.com/posts" method="post">
 				<fieldset>
-					<label>
-						<input type="radio" name="halls" value="80's vibes">80's vibes
-					</label>
-					<label>
-						<input type="radio" name="halls" value="star wars">star wars
-					</label>
-					<label>
-						<input type="radio" name="halls" value="Wild west">wild west
-					</label>
-					<label>
-						<input type="radio" name="halls" value="neon style">neon style
-					</label>
+					<input type="radio" name="halls" value="80's vibes" id="80's vibes">
+					<label for="80's vibes">80's vibes</label>
+
+					<input type="radio" name="halls" value="star wars" id="star wars">
+					<label for="star wars">star wars</label>
+
+					<input type="radio" name="halls" value="wild west" id="wild west">
+					<label for="wild west">wild west</label>
+
+					<input type="radio" name="halls" value="neon style" id="neon style">
+					<label for="neon style">neon style</label>
+
 				</fieldset>
 				<fieldset>
 					<legend>Соберите набор развлечений</legend>
@@ -141,39 +141,34 @@
 				</fieldset>
 				<fieldset>
 					<legend>Выбери дату и время</legend>
-					<label>
-						Дата
-						<input type="date" name="data" required>
-					</label>
-					<label>
-						Время
-						<input type="time" name="time" required>
-					</label><br>
-					<label>
-						Количество человек
-						<input type="number" name="count" required>
-					</label><br>
-					<label>
-						Имя
-						<input type="text" name="name" required>
-					</label><br>
-					<label>
-						Фамилия
-						<input type="text" name="surname" required>
-					</label><br>
-					<label>
-						Номер телефона
-						<input type="tel" name="tel" required>
-					</label><br>
-					<label>
-						<input type="checkbox" name="age" value="age" required>Я старше 18 лет
-					</label>
+					<label for="date">Дата</label>
+					<input type="date" name="data" required id="date">
+
+					<label for="time">Время</label>
+					<input type="time" name="time" required id="time"><br>
+
+					<label for="number">Количество человек</label>
+					<input type="number" name="count" required id="number"><br>
+
+					<label for="name">Имя</label>
+					<input type="text" name="name" required id="name"><br>
+
+
+					<label for="surname">Фамилия</label>
+					<input type="text" name="surname" required id="surname"><br>
+
+					<label for="tel">Номер телефона</label>
+					<input type="tel" name="tel" required id="tel"><br>
+
+
+					<label for="age">Я старше 18 лет</label>
+					<input type="checkbox" name="age" value="age" required id="age">
 
 				</fieldset>
 				<button type="submit">Забронировать</button>
-				<label>
-					<input type="checkbox" name="data" value="data" required>Согласен на обработку данных
-				</label>
+
+				<label for="agreement">Согласен на обработку данных</label>
+				<input type="checkbox" name="agreement" value="agreement" id="agreement" required>
 			</form>
 		</section>
 		<section id="about">
