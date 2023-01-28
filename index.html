@@ -23,8 +23,8 @@
 			<ul>
 				<li><a href="#ourHalls">Залы</a></li>
 				<li><a href="#about">О нас</a></li>
-				<li><a href="#git sbooking">Бронь</a></li>
-				<li><a href="#">Отзывы</a></li>
+				<li><a href="#booking">Бронь</a></li>
+				<li><a href="#reviews">Отзывы</a></li>
 				<li><a href="#contact">Контакты</a></li>
 			</ul>
 		</nav>
@@ -81,9 +81,10 @@
 			</ol>
 		</section>
 		<section id="booking">
-			<h2>Забронировать</h2>
+			<h2>Забронировать зал просто</h2>
 			<form action="https://jsonplaceholder.typicode.com/posts" method="post">
 				<fieldset>
+					<legend>Выбери зал</legend>
 					<input type="radio" name="halls" value="80's vibes" id="80's-vibes">
 					<label for="80's-vibes">80's vibes</label>
 
@@ -141,34 +142,36 @@
 				</fieldset>
 				<fieldset>
 					<legend>Выбери дату и время</legend>
-					<label for="date">Дата</label>
-					<input type="date" name="data" required id="date">
+					<fieldset>
+						<label for="date">Дата</label>
+						<input type="date" name="data" required id="date">
 
-					<label for="time">Время</label>
-					<input type="time" name="time" required id="time"><br>
+						<label for="time">Время</label>
+						<input type="time" name="time" required id="time"><br>
 
-					<label for="number">Количество человек</label>
-					<input type="number" name="count" required id="number"><br>
+						<label for="number">Количество человек</label>
+						<input type="number" name="count" required id="number">
+					</fieldset>
+					<fieldset>
 
-					<label for="name">Имя</label>
-					<input type="text" name="name" required id="name"><br>
-
-
-					<label for="surname">Фамилия</label>
-					<input type="text" name="surname" required id="surname"><br>
-
-					<label for="tel">Номер телефона</label>
-					<input type="tel" name="tel" required id="tel"><br>
+						<label for="name">Имя</label>
+						<input type="text" name="name" required id="name"><br>
 
 
-					<label for="age">Я старше 18 лет</label>
-					<input type="checkbox" name="age" value="age" required id="age">
+						<label for="surname">Фамилия</label>
+						<input type="text" name="surname" required id="surname">
+					</fieldset>
+
+					<fieldset>
+						<label for="tel">Номер телефона</label>
+						<input type="tel" name="tel" required id="tel"><br>
+					</fieldset>
+
 
 				</fieldset>
 				<button type="submit">Забронировать</button>
 
-				<label for="agreement">Согласен на обработку данных</label>
-				<input type="checkbox" name="agreement" value="agreement" id="agreement" required>
+
 			</form>
 		</section>
 		<section id="about">
@@ -183,6 +186,44 @@
 				<p><strong>GAME OVER</strong> -- это место незабываемых впечатлений</p>
 				<p><cite>Аркадий Абакшин,создатель игровой территории GAME OVER</cite></p>
 			</blockquote>
+		</section>
+		<section id="reviews">
+			<h2>Отзывы посетителей</h2>
+			<ul>
+				<li>
+					<figure>
+						<div>
+							<img src="https://via.placeholder.com/180" alt="Макс Самойлов">
+						</div>
+						<figcaption>Макс Самойлов</figcaption>
+					</figure>
+					<p>Отмечали здесь день рождение в компании друзей,всё было очень круто!VR очки это просто
+						бомба,никогдаеще не был в таком игровом окружение.Сервис на высоте!
+					</p>
+				</li>
+				<li>
+					<figure>
+						<div>
+							<img src="https://via.placeholder.com/180" alt="Оксана Григорьева">
+						</div>
+						<figcaption>Оксана Григорьева</figcaption>
+					</figure>
+					<p>Были в комнате Дикий Запад,пели в караоке под Шакиру,отличный получился корпоратив!У нас в городе
+						больше нет подобных заведений
+					</p>
+				</li>
+				<li>
+					<figure>
+						<div>
+							<img src="https://via.placeholder.com/180" alt="Никита Ященко">
+						</div>
+						<figcaption>Никита Ященко</figcaption>
+					</figure>
+					<p>Немного подвисала игра в VR очках,а так все норм.Крутое оформление комнаты в стиле звездных
+						войн,попал в атмосферу космоса.
+					</p>
+				</li>
+			</ul>
 		</section>
 	</main>
 	<footer id="contact">
