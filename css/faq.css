@@ -8,7 +8,7 @@
 	font-size: 24px;
 	padding: 30px 70px;
 	cursor: pointer;
-	line-height: 36px;
+	line-height: 46px;
 
 }
 
@@ -31,8 +31,8 @@
 .list__item:after {
 	content: '';
 	display: inline-block;
-	width: 36px;
-	height: 36px;
+	width: 46px;
+	height: 46px;
 	float: right;
 }
 
