@@ -25,10 +25,10 @@
 	right: 60px;
 	width: 46px;
 	height: 46px;
-	background: url('../img/icon/open-purple.svg') no-repeat;
+	background: url('../img/icon/open-purple.svg');
 
 }
 
 .list__item:nth-child(even):after {
-	background: url('../img/icon/open.svg') no-repeat;
+	background: url('../img/icon/open.svg');
 }
