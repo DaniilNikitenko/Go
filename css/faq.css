@@ -1,16 +1,20 @@
 .list {
 	list-style: none;
+	margin: 0;
 }
 
 .list__item {
-	background-color: #fff;
-	color: #1C1A1A;
 	font-weight: 700;
 	font-size: 24px;
 	padding: 30px 70px;
-	margin-bottom: 20px;
-	position: relative;
 	cursor: pointer;
+	line-height: 36px;
+
+}
+
+.list__item:nth-child(odd) {
+	background-color: #fff;
+	color: #1C1A1A;
 }
 
 .list__item:nth-child(even) {
@@ -18,15 +22,22 @@
 	color: #fff;
 }
 
+
+.list__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+
 .list__item:after {
 	content: '';
-	position: absolute;
-	top: 21.75px;
-	right: 60px;
-	width: 46px;
-	height: 46px;
-	background: url('../img/icon/open-purple.svg');
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	float: right;
+}
 
+.list__item:nth-child(odd):after {
+	background: url('../img/icon/open-purple.svg');
 }
 
 .list__item:nth-child(even):after {
