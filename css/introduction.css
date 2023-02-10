@@ -1,0 +1,35 @@
+.introduction {
+	padding: 73px 0 50px;
+	height: 946px;
+}
+
+.introduction__body:after {
+	content: "";
+	display: inline-block;
+	width: 675px;
+	height: 762px;
+	background-image: url("../img/human.png");
+	background-repeat: no-repeat;
+	transform: translate(505px, -146px);
+
+}
+
+.introduction__body {
+	height: 100%;
+}
+
+.introduction__title {
+	font-weight: 900;
+	font-size: 150px;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: -0.1em;
+}
+
+.introduction__text {
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 1.78;
+	margin: 0;
+	padding-left: 101px;
+}

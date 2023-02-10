@@ -1,0 +1,12 @@
+.reservation {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.reservation__title {
+	margin-bottom: 50px;
+}
+
+.reservation__form {
+	padding: 0 22px;
+}

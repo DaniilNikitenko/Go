@@ -1,2 +1,7 @@
 @import url('style.css');
-@import url('faq.css');
+@import url('introduction.css');
+@import url("halls.css");
+@import url('reservation.css');
+@import url('about.css');
+@import url("faq.css");
+@import url('footer.css');

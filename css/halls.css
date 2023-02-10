@@ -1,0 +1,49 @@
+.halls {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.halls__title {
+	margin: 0 0 60px;
+}
+
+.halss__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.halls__item {
+	text-align: center;
+}
+
+.halls__item:not(:last-child) {
+	margin-bottom: 60px;
+}
+
+
+
+.halls__link {
+	text-decoration: none;
+}
+
+.halls__figure {
+	margin: 0;
+	position: relative;
+}
+
+.halls__image {}
+
+.halls__figcaption {
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 1.14;
+	/* 80/70 */
+	color: #fff;
+	text-transform: uppercase;
+	position: absolute;
+	top: 275px;
+	left: 485px;
+	max-width: 252px;
+	margin: 0 auto;
+}

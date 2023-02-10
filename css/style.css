@@ -3,16 +3,36 @@
 }
 
 body {
-	background-color: #1B1A1B;
-	color: #FFFFFF;
+	font-size: 20px;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	line-height: 1;
+	background: #1B1A1B;
+	font-weight: 400;
+	height: 100%;
 }
 
-.quote {
-	text-transform: uppercase;
-}
+
 
 .wrapper {
-	width: 1200px;
-	padding: 30px;
+	padding-top: 73px;
+	padding-bottom: 56px;
+	min-height: 100%;
+}
+
+.container {
+	padding: 0 30px;
+	max-width: 1240px;
 	margin: 0 auto;
+	height: 100%;
+
+}
+
+.title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 1.25;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
 }

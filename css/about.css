@@ -1,0 +1,96 @@
+.about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.about__title {
+	margin-bottom: 50px;
+}
+
+.about__text {
+	font-size: 20px;
+	line-height: 1.4;
+	/* 28/20 */
+}
+
+.about__text:not(:last-child) {
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.about__blockquote {
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 55px;
+	position: relative;
+
+
+}
+
+.about__quote-string {
+	font-weight: 400;
+
+}
+
+
+.about__quote {
+	margin: 0;
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 1.13;
+	/* 50/44 */
+	text-transform: uppercase;
+	white-space: pre-line;
+}
+
+.about__quote:before {
+	content: "\201c";
+	font-weight: 900;
+	color: #6C0287;
+	position: absolute;
+	left: 0;
+	top: 30px;
+
+
+
+
+}
+
+.about__quote:after {
+	content: "\201d";
+	font-weight: 900;
+	color: #6C0287;
+	padding-left: 15px;
+
+}
+
+
+
+
+.about__creator {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin: 0;
+	gap: 30px;
+}
+
+.about__image {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+
+.about__figcaption {
+	white-space: pre-line;
+}
+
+.about__cite {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 1.4;
+}

@@ -1,9 +1,19 @@
-.list {
-	list-style: none;
-	margin: 0;
+.faq {
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
-.list__item {
+.faq__title {
+	margin-bottom: 40px;
+}
+
+.faq__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.faq__item {
 	font-weight: 700;
 	font-size: 24px;
 	padding: 30px 70px;
@@ -12,34 +22,33 @@
 
 }
 
-.list__item:nth-child(odd) {
+.faq__item:nth-child(odd) {
 	background-color: #fff;
 	color: #1C1A1A;
 }
 
-.list__item:nth-child(even) {
+.faq__item:nth-child(even) {
 	background-color: #440F51;
 	color: #fff;
 }
 
 
-.list__item:not(:last-child) {
+.faq__item:not(:last-child) {
 	margin-bottom: 20px;
 }
 
 
-.list__item:after {
+.faq__item:after {
 	content: '';
-	display: inline-block;
 	width: 46px;
 	height: 46px;
 	float: right;
 }
 
-.list__item:nth-child(odd):after {
-	background: url('../img/icon/open-purple.svg');
+.faq__item:nth-child(odd):after {
+	background: url('../img/faq/open-purple.svg');
 }
 
-.list__item:nth-child(even):after {
-	background: url('../img/icon/open.svg');
+.faq__item:nth-child(even):after {
+	background: url('../img/faq/open-white.svg');
 }
