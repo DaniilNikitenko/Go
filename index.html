@@ -17,165 +17,165 @@
 </head>
 
 <body>
-	<div class="wrapper">
-		<main class="main">
-			<section class="introduction">
-				<div class="container">
-					<div class="introduction__body">
-						<h1 class="introduction__title">Game Over</h1>
-						<p class="introduction__text">Новый формат игр и отдыха</p>
-					</div>
+	<main class="main">
+		<section class="introduction">
+			<div class="container">
+				<div class="introduction__body">
+					<h1 class="introduction__title">Game Over</h1>
+					<p class="introduction__text">Новый формат игр и отдыха</p>
 				</div>
-			</section>
-			<section class="halls">
-				<div class="container">
-					<h2 class="halls__title title">
-						Наши залы
-					</h2>
-					<ul class="halss__list">
-						<li class="halls__item">
-							<a class="halls__link" href="halls/vibes.html">
-								<figure class="halls__figure">
-									<figcaption class="halls__figcaption">80's vibes</figcaption>
-									<img class="halls__image" src="img/Halls/80s-vibes.jpg" alt="Зал 80's-vibes">
-								</figure>
-							</a>
-						</li>
-						<li class="halls__item">
-							<a class="halls__link" href="halls/vibes.html">
-								<figure class="halls__figure">
+			</div>
+		</section>
+		<section class="halls">
+			<div class="container">
+				<h2 class="halls__title title">
+					Наши залы
+				</h2>
+				<ul class="halss__list">
+					<li class="halls__item">
+						<a class="halls__link" href="halls/vibes.html">
+							<figure class="halls__figure">
+								<figcaption class="halls__figcaption">80's vibes</figcaption>
+								<img class="halls__image" src="img/Halls/80s-vibes.jpg" alt="Зал 80's-vibes">
+							</figure>
+						</a>
+					</li>
+					<li class="halls__item">
+						<a class="halls__link" href="halls/vibes.html">
+							<figure class="halls__figure">
 
-									<figcaption class="halls__figcaption">Star wars</figcaption>
-									<img class="halls__image" src="img/Halls/star-wars.jpg" alt="Зал Star Wars">
-								</figure>
-							</a>
-						</li>
-						<li class="halls__item">
-							<a class="halls__link" href="halls/vibes.html">
-								<figure class="halls__figure">
-									<figcaption class="halls__figcaption">wild west</figcaption>
-									<img class="halls__image" src="img/Halls/wild-west.jpg" alt="Зал wild west">
-								</figure>
-							</a>
-						</li>
-						<li class="halls__item">
-							<a class="halls__link" href="halls/vibes.html">
-								<figure class="halls__figure">
-									<figcaption class="halls__figcaption">neon style</figcaption>
-									<img class="halls__image" src="img/Halls/neon-style.jpg" alt="Зал neon-style">
-								</figure>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="reservation">
-				<div class="container">
-					<h2 class="reservation__title title">
-						Забронировать
-					</h2>
-					<form class="reservation__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+								<figcaption class="halls__figcaption">Star wars</figcaption>
+								<img class="halls__image" src="img/Halls/star-wars.jpg" alt="Зал Star Wars">
+							</figure>
+						</a>
+					</li>
+					<li class="halls__item">
+						<a class="halls__link" href="halls/vibes.html">
+							<figure class="halls__figure">
+								<figcaption class="halls__figcaption">wild west</figcaption>
+								<img class="halls__image" src="img/Halls/wild-west.jpg" alt="Зал wild west">
+							</figure>
+						</a>
+					</li>
+					<li class="halls__item">
+						<a class="halls__link" href="halls/vibes.html">
+							<figure class="halls__figure">
+								<figcaption class="halls__figcaption">neon style</figcaption>
+								<img class="halls__image" src="img/Halls/neon-style.jpg" alt="Зал neon-style">
+							</figure>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="reservation">
+			<div class="container">
+				<h2 class="reservation__title title">
+					Забронировать
+				</h2>
+				<form class="reservation__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+					<fieldset>
+						<legend>Выбери зал</legend>
+						<input type="radio" name="halls" value="80's vibes" id="80's-vibes">
+						<label for="80's-vibes">80's vibes</label>
+
+						<input type="radio" name="halls" value="star wars" id="star-wars">
+						<label for="star-wars">star wars</label>
+
+						<input type="radio" name="halls" value="wild west" id="wild-west">
+						<label for="wild-west">wild west</label>
+
+						<input type="radio" name="halls" value="neon style" id="neon-style">
+						<label for="neon-style">neon style</label>
+
+					</fieldset>
+					<fieldset>
+						<legend>Соберите набор развлечений</legend>
 						<fieldset>
-							<legend>Выбери зал</legend>
-							<input type="radio" name="halls" value="80's vibes" id="80's-vibes">
-							<label for="80's-vibes">80's vibes</label>
-
-							<input type="radio" name="halls" value="star wars" id="star-wars">
-							<label for="star-wars">star wars</label>
-
-							<input type="radio" name="halls" value="wild west" id="wild-west">
-							<label for="wild-west">wild west</label>
-
-							<input type="radio" name="halls" value="neon style" id="neon-style">
-							<label for="neon-style">neon style</label>
-
+							<legend>Приставка</legend>
+							<label>
+								<input type="radio" name="prefix" value="PS">PlayStation
+							</label>
+							<label>
+								<input type="radio" name="prefix" value="Sega">Sega Mega Drive
+							</label>
+							<label>
+								<input type="radio" name="prefix" value="Xbox">X-box One S
+							</label>
+							<label>
+								<input type="radio" name="prefix" value="Dendy">Dendy
+							</label>
 						</fieldset>
 						<fieldset>
-							<legend>Соберите набор развлечений</legend>
-							<fieldset>
-								<legend>Приставка</legend>
-								<label>
-									<input type="radio" name="prefix" value="PS">PlayStation
-								</label>
-								<label>
-									<input type="radio" name="prefix" value="Sega">Sega Mega Drive
-								</label>
-								<label>
-									<input type="radio" name="prefix" value="Xbox">X-box One S
-								</label>
-								<label>
-									<input type="radio" name="prefix" value="Dendy">Dendy
-								</label>
-							</fieldset>
-							<fieldset>
-								<legend>Настольные игры</legend>
-								<label>
-									<input type="checkbox" name="games" value="Jenda">Jenda
-								</label>
-								<label>
-									<input type="checkbox" name="games" value="Monopoly">Monopoly
-								</label>
-								<label>
-									<input type="checkbox" name="games" value="Manchin">Манчкин
-								</label>
-								<label>
-									<input type="checkbox" name="games" value="Dendy">Alias
-								</label>
-							</fieldset>
-							<fieldset>
-								<legend>Дополнительно</legend>
-								<label>
-									<input type="checkbox" name="additionally" value="karaoke">Караоке
-								</label>
-								<label>
-									<input type="checkbox" name="additionally" value="VR">VR
-								</label>
-							</fieldset>
+							<legend>Настольные игры</legend>
+							<label>
+								<input type="checkbox" name="games" value="Jenda">Jenda
+							</label>
+							<label>
+								<input type="checkbox" name="games" value="Monopoly">Monopoly
+							</label>
+							<label>
+								<input type="checkbox" name="games" value="Manchin">Манчкин
+							</label>
+							<label>
+								<input type="checkbox" name="games" value="Dendy">Alias
+							</label>
 						</fieldset>
 						<fieldset>
-							<legend>Выбери дату и время</legend>
-							<label for="date">Дата</label>
-							<input type="date" name="data" required id="date">
-
-							<label for="time">Время</label>
-							<input type="time" name="time" required id="time">
-
-
-							<label for="number">Количество человек</label>
-							<input type="number" name="count" required id="number">
-
-
-							<label for="name">Имя</label>
-							<input type="text" name="name" required id="name"><br>
-
-
-							<label for="surname">Фамилия</label>
-							<input type="text" name="surname" required id="surname">
-
-
-
-							<label for="tel">Телефон</label>
-							<input type="tel" name="tel" required id="tel"><br>
-
-							<label for="email">E-mail</label>
-							<input type="email" name="email" required id="email">
-
-							<input type="checkbox" name="check" required id="checkbox">
-							<label for="checkbox">Я старше 18 лет</label>
-
-
-
+							<legend>Дополнительно</legend>
+							<label>
+								<input type="checkbox" name="additionally" value="karaoke">Караоке
+							</label>
+							<label>
+								<input type="checkbox" name="additionally" value="VR">VR
+							</label>
 						</fieldset>
-						<button type="submit">Забронировать</button>
-						<input type="checkbox" name="agree" required id="agree">
-						<label for="agree">Согласен на обработку данных</label>
+					</fieldset>
+					<fieldset>
+						<legend>Выбери дату и время</legend>
+						<label for="date">Дата</label>
+						<input type="date" name="data" required id="date">
 
-					</form>
-				</div>
-			</section>
-			<section class="about">
-				<div class="container">
-					<h2 class="about__title title">О нас</h2>
+						<label for="time">Время</label>
+						<input type="time" name="time" required id="time">
+
+
+						<label for="number">Количество человек</label>
+						<input type="number" name="count" required id="number">
+
+
+						<label for="name">Имя</label>
+						<input type="text" name="name" required id="name"><br>
+
+
+						<label for="surname">Фамилия</label>
+						<input type="text" name="surname" required id="surname">
+
+
+
+						<label for="tel">Телефон</label>
+						<input type="tel" name="tel" required id="tel"><br>
+
+						<label for="email">E-mail</label>
+						<input type="email" name="email" required id="email">
+
+						<input type="checkbox" name="check" required id="checkbox">
+						<label for="checkbox">Я старше 18 лет</label>
+
+
+
+					</fieldset>
+					<button type="submit">Забронировать</button>
+					<input type="checkbox" name="agree" required id="agree">
+					<label for="agree">Согласен на обработку данных</label>
+
+				</form>
+			</div>
+		</section>
+		<section class="about">
+			<div class="container">
+				<h2 class="about__title title">О нас</h2>
+				<div class="about__paragraphs">
 					<p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство
 						виртуальной
 						реальности в
@@ -185,61 +185,74 @@
 						радовать Вас топовыми
 						игровыми
 						разработками всего мира.</p>
-					<blockquote class="about__blockquote">
-						<p class="about__quote">GAME OVER —
-							это место незабываемых впечатлений</p>
-						<figure class="about__creator">
-							<img class="about__image" src="img/creator.jpg"
-								alt="создатель игровой территории GAME OVER">
-							<figcaption class="about__figcaption">
-								<cite class="about__cite">Аркадий Абакшин,
-									создатель игровой
-									территории GAME OVER</cite>
-
-							</figcaption>
-						</figure>
-					</blockquote>
 				</div>
-			</section>
-			<section class="faq">
-				<div class="container">
-					<h2 class="faq__title title">Частые вопросы</h2>
-					<ul class="faq__list">
-						<li class="faq__item">Можно ли забронировать комнату онлайн?</li>
-						<li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
-						<li class="faq__item">Какая комната самая популярная?</li>
-						<li class="faq__item">Как получить VIP карту?</li>
-						<li class="faq__item">Какая комната самая популярная?</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<h2 class="footer__title title">Контакты</h2>
-				<address class="footer__address">
-					<p class="footer__location">г. Москва
-						ул. Аквамарина, 16</p>
+				<blockquote class="about__blockquote">
+					<p class="about__quote">GAME OVER —
+						это место незабываемых впечатлений </p>
+					<figure class="about__creator">
+						<img class="about__image" src="img/creator.jpg" alt="создатель игровой территории GAME OVER">
+						<figcaption class="about__figcaption">
+							<cite class="about__cite">Аркадий Абакшин,
+								создатель игровой
+								территории GAME OVER</cite>
 
-
-					<p class="footer__tel"><a class="footer__link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
-					<p class="footer__email"><a class="footer__link"
-							href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-					</p>
-				</address>
-				<div class="footer__social-media">
-					<a class="footer__icon-link" href="https://vk.com/" target="_blank"><img class="footer__icon"
-							src="img/icon/vkontakte.svg" alt="Вконтакте"></a>
-					<a class="footer__icon-link" href="https://web.telegram.org/z/" target="_blank"><img
-							class="footer__icon" src="img/icon/Telegram.svg" alt="Телеграм"></a>
-					<a class="footer__icon-link" href="https://ru.pinterest.com" target="_blank"><img
-							class="footer__icon" src="img/icon/Pinterest.svg" alt="Пинтерест"></a>
-					<a class="footer__icon-link" href="https://www.stumbleupon.com" target="_blank"><img
-							class="footer__icon" src="img/icon/stumbleupon.svg" alt="StumbleUpon"></a>
-				</div>
+						</figcaption>
+					</figure>
+				</blockquote>
 			</div>
-		</footer>
-	</div>
+		</section>
+		<section class="faq">
+			<div class="container">
+				<h2 class="faq__title title">Частые вопросы</h2>
+				<ul class="faq__list">
+					<li class="faq__item">Можно ли забронировать комнату онлайн?</li>
+					<li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
+					<li class="faq__item">Какая комната самая популярная?</li>
+					<li class="faq__item">Как получить VIP карту?</li>
+					<li class="faq__item">Какая комната самая популярная?</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<h2 class="footer__title title">Контакты</h2>
+			<address class="footer__address">
+				<p class="footer__location icon">г. Москва
+					ул. Аквамарина, 16</p>
+
+
+				<p class="footer__tel icon"><a class="footer__link" href="tel:89509302893">8 (950) 930 - 28 - 93</a></p>
+				<p class="footer__email icon"><a class="footer__link"
+						href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+				</p>
+			</address>
+			<nav class="footer__nav">
+				<ul class="footer__list">
+					<li class="footer__item">
+						<a class="footer__icon-link" href="https://vk.com/" target="_blank">
+							<img class="footer__icon" src="img/icon/vkontakte.svg" alt="Вконтакте">
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__icon-link" href="https://web.telegram.org/z/" target="_blank">
+							<img class="footer__icon" src="img/icon/Telegram.svg" alt="Телеграм">
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__icon-link" href="https://ru.pinterest.com" target="_blank">
+							<img class="footer__icon" src="img/icon/Pinterest.svg" alt="Пинтерест">
+						</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__icon-link" href="https://www.stumbleupon.com" target="_blank">
+							<img class="footer__icon" src="img/icon/stumbleupon.svg" alt="StumbleUpon">
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
 </body>
 
 </html>

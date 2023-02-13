@@ -1,21 +1,25 @@
 .introduction {
-	padding: 73px 0 50px;
+	padding: 146px 0 50px;
 	height: 946px;
+}
+
+.introduction__body {
+	height: 100%;
+	position: relative;
 }
 
 .introduction__body:after {
 	content: "";
 	display: inline-block;
-	width: 675px;
-	height: 762px;
+	width: 100%;
+	height: 100%;
 	background-image: url("../img/human.png");
 	background-repeat: no-repeat;
-	transform: translate(505px, -146px);
+	background-position: top 65px right;
+	position: absolute;
+	top: 0;
+	right: 0;
 
-}
-
-.introduction__body {
-	height: 100%;
 }
 
 .introduction__title {
