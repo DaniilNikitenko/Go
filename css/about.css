@@ -28,13 +28,11 @@
 	margin: 0;
 	padding-left: 55px;
 	position: relative;
-
-
+	display: flow-root;
 }
 
 .about__quote-string {
 	font-weight: 400;
-
 }
 
 .about__quote {
@@ -66,7 +64,7 @@
 .about__creator {
 	margin: 0;
 	display: inline-block;
-	padding-left: 730px;
+	float: right;
 
 }
 
