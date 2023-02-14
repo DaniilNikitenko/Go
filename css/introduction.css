@@ -25,7 +25,6 @@
 .introduction__title {
 	font-weight: 900;
 	font-size: 150px;
-	margin: 0;
 	text-transform: uppercase;
 	letter-spacing: -0.1em;
 }
@@ -34,6 +33,5 @@
 	font-weight: 400;
 	font-size: 28px;
 	line-height: 1.78;
-	margin: 0;
 	padding-left: 101px;
 }

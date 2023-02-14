@@ -7,11 +7,7 @@
 	margin: 0 0 60px;
 }
 
-.halss__list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
+
 
 .halls__item {
 	text-align: center;
@@ -28,11 +24,8 @@
 }
 
 .halls__figure {
-	margin: 0;
 	position: relative;
 }
-
-.halls__image {}
 
 .halls__figcaption {
 	font-weight: 700;
