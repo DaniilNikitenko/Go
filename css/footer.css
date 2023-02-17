@@ -17,13 +17,13 @@
 	line-height: 1.17;
 }
 
-.address__text--location {
+.address__text_icon_location {
 	margin-bottom: 38px;
 	white-space: pre-line;
 
 }
 
-.address__text--tel {
+.address__text_icon_tel {
 	margin-bottom: 11px;
 }
 
@@ -42,18 +42,18 @@
 	background-repeat: no-repeat;
 }
 
-.address__text--location:before {
+.address__text_icon_location:before {
 	background-image: url('../img/icon/location.svg');
 	float: left;
 	height: 64px;
 	background-position: center;
 }
 
-.address__text--tel:before {
+.address__text_icon_tel:before {
 	background-image: url('../img/icon/telephone.svg');
 }
 
-.address__text--email:before {
+.address__text_icon_email:before {
 	background-image: url('../img/icon/mail.svg');
 }
 
