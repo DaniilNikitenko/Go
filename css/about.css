@@ -19,12 +19,12 @@
 
 .about__paragraphs {
 	margin-bottom: 48px;
+	max-width: 437px;
 }
 
 .about__text {
 	font-size: 20px;
 	line-height: 1.4;
-	max-width: 437px;
 
 	/* 28/20 */
 }
