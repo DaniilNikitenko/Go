@@ -18,13 +18,13 @@
 
 .reviews__figure {
 	float: left;
+	margin-right: 20px;
 }
 
 .reviews__image {
 	width: 280px;
 	height: 280px;
 	margin-bottom: 11px;
-	margin-right: 20px;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: 0 -10px;
