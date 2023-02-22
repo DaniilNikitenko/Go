@@ -16,16 +16,80 @@
 </head>
 
 <body class="page">
+	<header class="header">
+		<div class="container header__container">
+			<a href="#" class="header__logo">
+				<img src="img/logo.svg" alt="Лого">
+			</a>
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a class="menu__link" href="#ourHalls">Залы</a></li>
+					<li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+					<li class="menu__item"><a class="menu__link" href="#booking">Бронь</a></li>
+					<li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+					<li class="menu__item"><a class="menu__link" href="#contact">Контакты</a></li>
+				</ul>
+			</nav>
+			<button class="header__button" type="button">
+				Заказать звонок
+			</button>
+		</div>
+	</header>
 	<main class="main">
 		<section class="introduction">
 			<div class="container">
 				<div class="introduction__body">
 					<h1 class="page__title">Game Over</h1>
 					<p class="introduction__text">Новый формат игр и отдыха</p>
+					<div class="introduction__info">
+						<div class="introduction__info-cart">
+							<p class="introduction__info-cart-title">4</p>
+							<p class="introduction__info-cart-text">Тематических зала</p>
+						</div>
+						<div class="introduction__info-cart">
+							<p class="introduction__info-cart-title introduction__info-cart-title_size_less">New</p>
+							<p class="introduction__info-cart-text">Новейшая аппаратура</p>
+						</div>
+					</div>
+					<a href="#booking" class="introduction__link">Забронировать</a>
+					<button class="introduction__button" type="button">
+						<span class="introduction__button-arrow"></span>
+					</button>
 				</div>
 			</div>
 		</section>
-		<section class="halls">
+		<section class="services">
+			<div class="container">
+				<h2 class="services__title title">У нас есть всё для классного отдыха с друзьями!</h2>
+				<ul class="services__list">
+					<li class="services__item services__item_bg_vr">
+						VR очки
+
+					</li>
+					<li class="services__item services__item_bg_audio">
+						Аудио система 5.1
+						с отличным звуком!
+					</li>
+					<li class="services__item services__item_bg_micro">
+						Караоке(4 микрофона)
+
+					</li>
+					<li class="services__item services__item_bg_game">
+						Настольные игры
+
+					</li>
+					<li class="services__item services__item_bg_netflix">
+						Кино сервисы Netfli,IVI,
+						MegoGo,КиноПоиск,Okko
+					</li>
+					<li class="services__item services__item_bg_sony">
+						PlayStation 5
+
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="halls" id="ourHalls">
 			<div class="container">
 				<h2 class="halls__title title">
 					Наши залы
@@ -67,145 +131,151 @@
 				</ul>
 			</div>
 		</section>
-		<section class="reservation">
-			<div class="container">
+		<section class="reservation" id="booking">
+			<div class="container reservation__container">
 				<h2 class="reservation__title title">
 					Забронировать
 				</h2>
 				<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-					<fieldset>
-						<legend>Выбери зал</legend>
-						<input type="radio" name="halls" value="80's vibes" id="80's-vibes">
-						<label for="80's-vibes">80's vibes</label>
+					<fieldset class="fieldset-form-halls">
+						<legend class="legend-fieldset legend">Выбери зал</legend>
+						<div class="fieldset-form-halls__block">
+							<input class="fieldset-form-halls__input" type="radio" name="halls" value="80's vibes"
+								id="80's-vibes">
+							<label class="fieldset-form-halls__label" for="80's-vibes">80's vibes</label>
 
-						<input type="radio" name="halls" value="star wars" id="star-wars">
-						<label for="star-wars">star wars</label>
+							<input class="fieldset-form-halls__input" type="radio" name="halls" value="star wars"
+								id="star-wars">
+							<label class="fieldset-form-halls__label" for="star-wars">star wars</label>
 
-						<input type="radio" name="halls" value="wild west" id="wild-west">
-						<label for="wild-west">wild west</label>
+							<input class="fieldset-form-halls__input" type="radio" name="halls" value="wild west"
+								id="wild-west">
+							<label class="fieldset-form-halls__label" for="wild-west">wild west</label>
 
-						<input type="radio" name="halls" value="neon style" id="neon-style">
-						<label for="neon-style">neon style</label>
-
+							<input class="fieldset-form-halls__input" type="radio" name="halls" value="neon style"
+								id="neon-style">
+							<label class="fieldset-form-halls__label" for="neon-style">neon style</label>
+						</div>
 					</fieldset>
-					<fieldset>
-						<legend>Соберите набор развлечений</legend>
-						<fieldset>
-							<legend>Приставка</legend>
-							<label>
-								<input type="radio" name="prefix" value="PS">PlayStation
-							</label>
-							<label>
-								<input type="radio" name="prefix" value="Sega">Sega Mega Drive
-							</label>
-							<label>
-								<input type="radio" name="prefix" value="Xbox">X-box One S
-							</label>
-							<label>
-								<input type="radio" name="prefix" value="Dendy">Dendy
-							</label>
-						</fieldset>
-						<fieldset>
-							<legend>Настольные игры</legend>
-							<label>
-								<input type="checkbox" name="games" value="Jenda">Jenda
-							</label>
-							<label>
-								<input type="checkbox" name="games" value="Monopoly">Monopoly
-							</label>
-							<label>
-								<input type="checkbox" name="games" value="Manchin">Манчкин
-							</label>
-							<label>
-								<input type="checkbox" name="games" value="Dendy">Alias
-							</label>
-						</fieldset>
-						<fieldset>
-							<legend>Дополнительно</legend>
-							<label>
-								<input type="checkbox" name="additionally" value="karaoke">Караоке
-							</label>
-							<label>
-								<input type="checkbox" name="additionally" value="VR">VR
-							</label>
-						</fieldset>
+					<fieldset class="fieldset-form-set">
+						<legend class="legend-fieldset legend">Соберите набор развлечений</legend>
+						<div class="fieldset-form-set__row">
+							<fieldset class="fieldset-form-set__block">
+								<legend class="fieldset-form-set__legend legend">Приставка</legend>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix"
+										value="PS">PlayStation
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix" value="Sega">Sega
+									Mega Drive
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix"
+										value="Xbox">X-box
+									One S
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix"
+										value="Dendy">Dendy
+								</label>
+							</fieldset>
+							<fieldset class="fieldset-form-set__block">
+								<legend class="fieldset-form-set__legend legend">Настольные игры</legend>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Jenda">Jenda
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Monopoly">Monopoly
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Manchin">Манчкин
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Dendy">Alias
+								</label>
+							</fieldset>
+							<fieldset class="fieldset-form-set__block">
+								<legend class="fieldset-form-set__legend legend">Дополнительно</legend>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="additionally"
+										value="karaoke">Караоке
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="additionally"
+										value="VR">VR
+								</label>
+							</fieldset>
+						</div>
 					</fieldset>
-					<fieldset>
-						<legend>Выбери дату и время</legend>
-						<label for="date">Дата</label>
-						<input type="date" name="data" required id="date">
-
-						<label for="time">Время</label>
-						<input type="time" name="time" required id="time">
-
-
-						<label for="number">Количество человек</label>
-						<input type="number" name="count" required id="number">
-
-
-						<label for="name">Имя</label>
-						<input type="text" name="name" required id="name"><br>
-
-
-						<label for="surname">Фамилия</label>
-						<input type="text" name="surname" required id="surname">
-
-
-
-						<label for="tel">Телефон</label>
-						<input type="tel" name="tel" required id="tel"><br>
-
-						<label for="email">E-mail</label>
-						<input type="email" name="email" required id="email">
-
-						<input type="checkbox" name="check" required id="checkbox">
-						<label for="checkbox">Я старше 18 лет</label>
-
-
-
+					<fieldset class="fieldset-form-date">
+						<legend class="legend-fieldset legend">Выбери дату и время</legend>
+						<div class="fieldset-form-date__block-time">
+							<input class="form__input form__input_date" type="date" name="data" required>
+							<input class="form__input form__input_date" type="time" name="time" required>
+							<input class="form__input form__input_count" type="number" name="count" required>
+						</div>
+						<div class="fieldset-form-date__block-info-name">
+							<label class="fieldset-form-date__label" for="name">Имя</label>
+							<input class="form__input form__input-info" type="text" name="name" required id="name">
+							<label class="fieldset-form-date__label" for="surname">Фамилия</label>
+							<input class="form__input form__input-info" type="text" name="surname" required
+								id="surname">
+						</div>
+						<div class="fieldset-form-date__block-info-contact">
+							<label class="fieldset-form-date__label" for="tel">Телефон</label>
+							<input class="form__input form__input-info" type="tel" name="tel" required id="tel">
+							<label class="fieldset-form-date__label" for="email">E-mail</label>
+							<input class="form__input form__input-info" type="email" name="email" required id="email">
+						</div>
 					</fieldset>
-					<button type="submit">Забронировать</button>
-					<input type="checkbox" name="agree" required id="agree">
-					<label for="agree">Согласен на обработку данных</label>
-
+					<div class="form__bth-row">
+						<button class="form__bth" type="submit">Забронировать</button>
+					</div>
 				</form>
 			</div>
 		</section>
-		<section class="about">
+		<section class="about" id="about">
 			<div class="container">
 				<h2 class="about__title title">О нас</h2>
-				<img class="about__image" src="img/about/about.jpg" alt="Фотографии из GAME OVER">
-				<div class="about__content">
-					<div class="about__paragraphs">
-						<p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство
-							виртуальной
-							реальности в
-							центральной
-							части города.</p>
-						<p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу
-							и
-							радовать Вас топовыми
-							игровыми
-							разработками со всего мира.</p>
+				<div class="about__row">
+					<img class="about__image" src="img/about/about.jpg" alt="Фотографии из GAME OVER">
+					<div class="about__content">
+						<div class="about__paragraphs">
+							<p class="about__text">Для наших гостей мы создали концептуально новое игровое пространство
+								виртуальной
+								реальности в
+								центральной
+								части города.</p>
+							<p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую
+								атмосферу
+								и
+								радовать Вас топовыми
+								игровыми
+								разработками со всего мира.</p>
+						</div>
+						<blockquote class="about__blockquote">
+							<p class="about__quote">GAME OVER —
+								это место незабываемых впечатлений </p>
+							<figure class="about__creator">
+								<img class="about__image-creator" src="img/creator.jpg"
+									alt="создатель игровой территории GAME OVER">
+								<figcaption class="about__figcaption">
+									<cite class="about__cite">Аркадий Абакшин,
+										создатель игровой
+										территории GAME OVER</cite>
+								</figcaption>
+							</figure>
+						</blockquote>
 					</div>
-					<blockquote class="about__blockquote">
-						<p class="about__quote">GAME OVER —
-							это место незабываемых впечатлений </p>
-						<figure class="about__creator">
-							<img class="about__image-creator" src="img/creator.jpg"
-								alt="создатель игровой территории GAME OVER">
-							<figcaption class="about__figcaption">
-								<cite class="about__cite">Аркадий Абакшин,
-									создатель игровой
-									территории GAME OVER</cite>
-
-							</figcaption>
-						</figure>
-					</blockquote>
 				</div>
 			</div>
 		</section>
-		<section class="reviews">
+		<section class="reviews" id="reviews">
 			<div class="container">
 				<h2 class="reviews__title title">Отзывы посетителей</h2>
 				<ul class="reviews__list">
@@ -256,42 +326,56 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer" id="contact">
 		<div class="container">
 			<h2 class="footer__title title">Контакты</h2>
-			<address class="address">
-				<p class="address__text address__text_icon_location">г. Москва
-					ул. Аквамарина, 16</p>
-				<p class="address__text address__text_icon_tel"><a class="address__link" href="tel:89509302893">8 (950)
-						930 - 28 - 93</a></p>
-				<p class="address__text address__text_icon_email"><a class="address__link"
-						href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-				</p>
-			</address>
-			<nav class="footer__navigation">
-				<ul class="social-list">
-					<li class="social-list__item">
-						<a class="social-list__icon-link" href="https://vk.com/" target="_blank">
-							<img class="social-list__icon" src="img/icon/vkontakte.svg" alt="Вконтакте">
-						</a>
-					</li>
-					<li class="social-list__item">
-						<a class="social-list__icon-link" href="https://web.telegram.org/z/" target="_blank">
-							<img class="social-list__icon" src="img/icon/Telegram.svg" alt="Телеграм">
-						</a>
-					</li>
-					<li class="social-list__item">
-						<a class="social-list__icon-link" href="https://ru.pinterest.com" target="_blank">
-							<img class="social-list__icon" src="img/icon/Pinterest.svg" alt="Пинтерест">
-						</a>
-					</li>
-					<li class="social-list__item">
-						<a class="social-list__icon-link" href="https://www.stumbleupon.com" target="_blank">
-							<img class="social-list__icon" src="img/icon/stumbleupon.svg" alt="StumbleUpon">
-						</a>
-					</li>
-				</ul>
-			</nav>
+			<div class="footer__row">
+				<div class="footer__info">
+					<address class="address">
+						<p class="address__text address__text_icon_location">г. Москва
+							ул. Аквамарина, 16</p>
+						<p class="address__text address__text_icon_tel"><a class="address__link"
+								href="tel:89509302893">8 (950)
+								930 - 28 - 93</a></p>
+						<p class="address__text address__text_icon_email"><a class="address__link"
+								href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+						</p>
+					</address>
+					<nav class="footer__navigation">
+						<ul class="social-list">
+							<li class="social-list__item">
+								<a class="social-list__icon-link" href="https://vk.com/" target="_blank">
+									<img class="social-list__icon" src="img/icon/vkontakte.svg" alt="Вконтакте">
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__icon-link" href="https://web.telegram.org/z/" target="_blank">
+									<img class="social-list__icon" src="img/icon/Telegram.svg" alt="Телеграм">
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__icon-link" href="https://ru.pinterest.com" target="_blank">
+									<img class="social-list__icon" src="img/icon/Pinterest.svg" alt="Пинтерест">
+								</a>
+							</li>
+							<li class="social-list__item">
+								<a class="social-list__icon-link" href="https://www.stumbleupon.com" target="_blank">
+									<img class="social-list__icon" src="img/icon/stumbleupon.svg" alt="StumbleUpon">
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<img src="img/footer/map.jpg" alt="Карта">
+			</div>
+			<div class="footer__bottom">
+				<p class="footer__text">© Game Over, 2022</p>
+				<div class="footer__contact">
+					<p class="footer__text">Design by Anastasia Ilina</p>
+					<p class="footer__text"><a class="footer__link"
+							href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></p>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>

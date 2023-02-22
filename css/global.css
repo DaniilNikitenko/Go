@@ -3,7 +3,11 @@ html {
 	position: relative;
 }
 
-* {
+*,
+*:before,
+*:after {
+	-moz-box-sizing: inherit;
+	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
 }
 

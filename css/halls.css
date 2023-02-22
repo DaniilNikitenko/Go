@@ -1,6 +1,6 @@
 .halls {
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: 100px;
 }
 
 .halls__title {
@@ -9,20 +9,14 @@
 
 .halls__list {
 	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
 .halls__item {
 	text-align: center;
-	display: inline-block;
-}
 
-
-.halls__item:not(:nth-child(2n)) {
-	margin-right: 20px;
-}
-
-.halls__item:not(:nth-last-child(-n+2)) {
-	margin-bottom: 20px;
 }
 
 .halls__link {

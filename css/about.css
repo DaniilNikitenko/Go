@@ -1,5 +1,5 @@
 .about {
-	padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 50px;
 }
 
@@ -7,14 +7,14 @@
 	margin-bottom: 50px;
 }
 
-.about__image {
-	float: left;
-	margin-right: 80px;
+.about__row {
+	display: flex;
+	gap: 80px;
 }
 
-.about__content {
-	display: flow-root;
-}
+.about__image {}
+
+.about__content {}
 
 
 .about__paragraphs {
@@ -70,13 +70,15 @@
 }
 
 .about__creator {
-	display: inline-block;
-	float: right;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 30px;
+	padding-right: 40px;
 
 }
 
 .about__figcaption {
-	display: inline-block;
 	max-width: 242px;
 }
 
@@ -86,7 +88,6 @@
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: 0 -10px;
-	margin-right: 30px;
 }
 
 .about__cite {
