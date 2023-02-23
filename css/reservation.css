@@ -35,9 +35,7 @@
 	text-align: center;
 }
 
-.fieldset-form-halls__input {
-	display: none;
-}
+.fieldset-form-halls__input {}
 
 
 .fieldset-form-halls__label {
@@ -80,10 +78,16 @@
 	margin-bottom: 24px;
 }
 
+.fieldset-form-set__block {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
 .fieldset-form-set__label {
-	display: block;
 	font-size: 22px;
 	line-height: 1.13;
+	cursor: pointer;
 }
 
 .fieldset-form-set__label:not(:last-child) {
@@ -130,6 +134,14 @@
 .form__input_count {
 	width: 100%;
 }
+
+.form__input_count::placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.55;
+	color: #211E1E;
+}
+
 
 .fieldset-form-date__block-info-name {
 	flex-basis: 280px;

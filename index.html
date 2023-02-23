@@ -36,55 +36,61 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="introduction">
-			<div class="container">
-				<div class="introduction__body">
-					<h1 class="page__title">Game Over</h1>
-					<p class="introduction__text">Новый формат игр и отдыха</p>
-					<div class="introduction__info">
-						<div class="introduction__info-cart">
-							<p class="introduction__info-cart-title">4</p>
-							<p class="introduction__info-cart-text">Тематических зала</p>
-						</div>
-						<div class="introduction__info-cart">
-							<p class="introduction__info-cart-title introduction__info-cart-title_size_less">New</p>
-							<p class="introduction__info-cart-text">Новейшая аппаратура</p>
-						</div>
+		<section class="hero">
+			<div class="container hero__container">
+				<h1 class="page__title">Game Over</h1>
+				<p class="hero__text">Новый формат игр и отдыха</p>
+				<div class="hero__info">
+					<div class="hero__info-cart">
+						<p class="hero__info-title-big">4</p>
+						<p class="hero__info-cart-text">Тематических зала</p>
 					</div>
-					<a href="#booking" class="introduction__link">Забронировать</a>
-					<button class="introduction__button" type="button">
-						<span class="introduction__button-arrow"></span>
-					</button>
+					<div class="hero__info-cart">
+						<p class="hero__info-title-small">New</p>
+						<p class="hero__info-cart-text">Новейшая аппаратура</p>
+					</div>
 				</div>
+				<a href="#booking" class="hero__link">Забронировать</a>
+				<a href="#services" class="hero__button" type="button">
+					<span class="hero__button-arrow"></span>
+				</a>
 			</div>
 		</section>
-		<section class="services">
+		<section class="services" id="services">
 			<div class="container">
 				<h2 class="services__title title">У нас есть всё для классного отдыха с друзьями!</h2>
 				<ul class="services__list">
 					<li class="services__item services__item_bg_vr">
-						VR очки
-
+						<p class="list__text">
+							VR очки
+						</p>
 					</li>
 					<li class="services__item services__item_bg_audio">
-						Аудио система 5.1
-						с отличным звуком!
+						<p class="list__text">
+							Аудио система 5.1
+							с&nbsp;отличным звуком!
+						</p>
 					</li>
 					<li class="services__item services__item_bg_micro">
-						Караоке(4 микрофона)
-
+						<p class="list__text">
+							Караоке(4 микрофона)
+						</p>
 					</li>
 					<li class="services__item services__item_bg_game">
-						Настольные игры
-
+						<p class="list__text">
+							Настольные игры
+						</p>
 					</li>
 					<li class="services__item services__item_bg_netflix">
-						Кино сервисы Netfli,IVI,
-						MegoGo,КиноПоиск,Okko
+						<p class="list__text">
+							Кино сервисы Netfli,IVI,
+							MegoGo,КиноПоиск,Okko
+						</p>
 					</li>
 					<li class="services__item services__item_bg_sony">
-						PlayStation 5
-
+						<p class="list__text">
+							PlayStation 5
+						</p>
 					</li>
 				</ul>
 			</div>
@@ -95,37 +101,25 @@
 					Наши залы
 				</h2>
 				<ul class="halls__list">
-					<li class="halls__item">
+					<li class="halls__item halls__item_bg_80s">
 						<a class="halls__link" href="halls/vibes.html">
-							<figure class="halls__figure">
-								<figcaption class="halls__figcaption">80's vibes</figcaption>
-								<img class="halls__image" src="img/Halls/80s-vibes.jpg" alt="Зал 80's-vibes">
-							</figure>
+							80’s vibes
 						</a>
 					</li>
-					<li class="halls__item">
-						<a class="halls__link" href="halls/vibes.html">
-							<figure class="halls__figure">
+					<li class="halls__item halls__item_bg_star-wars">
+						<a class="halls__link" href="halls/starwars.html">
+							Star Wars
+						</a>
+					</li>
 
-								<figcaption class="halls__figcaption">Star wars</figcaption>
-								<img class="halls__image" src="img/Halls/star-wars.jpg" alt="Зал Star Wars">
-							</figure>
+					<li class="halls__item halls__item_bg_wild-west">
+						<a class="halls__link" href="halls/wildwest.html">
+							Wild west
 						</a>
 					</li>
-					<li class="halls__item">
-						<a class="halls__link" href="halls/vibes.html">
-							<figure class="halls__figure">
-								<figcaption class="halls__figcaption">wild west</figcaption>
-								<img class="halls__image" src="img/Halls/wild-west.jpg" alt="Зал wild west">
-							</figure>
-						</a>
-					</li>
-					<li class="halls__item">
-						<a class="halls__link" href="halls/vibes.html">
-							<figure class="halls__figure">
-								<figcaption class="halls__figcaption">neon style</figcaption>
-								<img class="halls__image" src="img/Halls/neon-style.jpg" alt="Зал neon-style">
-							</figure>
+					<li class="halls__item halls__item_bg_neon-style">
+						<a class="halls__link" href="halls/neon.html">
+							Neon Style
 						</a>
 					</li>
 				</ul>
@@ -140,20 +134,20 @@
 					<fieldset class="fieldset-form-halls">
 						<legend class="legend-fieldset legend">Выбери зал</legend>
 						<div class="fieldset-form-halls__block">
-							<input class="fieldset-form-halls__input" type="radio" name="halls" value="80's vibes"
-								id="80's-vibes">
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="80's vibes" id="80's-vibes">
 							<label class="fieldset-form-halls__label" for="80's-vibes">80's vibes</label>
 
-							<input class="fieldset-form-halls__input" type="radio" name="halls" value="star wars"
-								id="star-wars">
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="star wars" id="star-wars">
 							<label class="fieldset-form-halls__label" for="star-wars">star wars</label>
 
-							<input class="fieldset-form-halls__input" type="radio" name="halls" value="wild west"
-								id="wild-west">
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="wild west" id="wild-west">
 							<label class="fieldset-form-halls__label" for="wild-west">wild west</label>
 
-							<input class="fieldset-form-halls__input" type="radio" name="halls" value="neon style"
-								id="neon-style">
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="neon style" id="neon-style">
 							<label class="fieldset-form-halls__label" for="neon-style">neon style</label>
 						</div>
 					</fieldset>
@@ -217,7 +211,8 @@
 						<div class="fieldset-form-date__block-time">
 							<input class="form__input form__input_date" type="date" name="data" required>
 							<input class="form__input form__input_date" type="time" name="time" required>
-							<input class="form__input form__input_count" type="number" name="count" required>
+							<input class="form__input form__input_count" placeholder="Сколько человек" type="number"
+								name="count" required>
 						</div>
 						<div class="fieldset-form-date__block-info-name">
 							<label class="fieldset-form-date__label" for="name">Имя</label>

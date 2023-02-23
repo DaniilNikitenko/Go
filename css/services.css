@@ -17,14 +17,14 @@
 }
 
 .services__item {
-	min-height: 228px;
-	flex: 0 1 380px;
 	display: flex;
-	align-items: flex-end;
-	padding-left: 40px;
-	padding-bottom: 6px;
+	flex: 0 1 380px;
+	padding: 166px 40px 6px;
+}
+
+.list__text {
 	line-height: 1.4;
-	white-space: pre-line;
+	font-weight: 700;
 }
 
 
