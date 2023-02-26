@@ -86,7 +86,25 @@
 
 .social-list__icon-link {
 	display: inline-block;
+	outline: 1px solid #ffffff00;
 }
+
+
+
+.social-list__icon-link:hover {
+	color: #EADEED;
+}
+
+.social-list__icon-link:focus {
+	color: #EADEED;
+	outline: 1px solid #CD06FF;
+}
+
+.social-list__icon-link:active {
+	color: #CD06FF;
+}
+
+
 
 .footer__bottom {
 	display: flex;
@@ -106,4 +124,12 @@
 
 .footer__contact {}
 
-.footer__link {}
+
+.footer__link {
+	display: flex;
+	justify-content: end;
+}
+
+.footer__link:hover {
+	color: #CD06FF;
+}

@@ -20,6 +20,10 @@
 	text-transform: uppercase;
 }
 
+.menu__item:hover {
+	color: #CD06FF;
+}
+
 .menu__link {}
 
 .header__button {
@@ -31,4 +35,20 @@
 	line-height: 1.36;
 	background: transparent;
 	text-transform: uppercase;
+	outline: none;
+}
+
+.header__button:hover {
+	border-color: #6C0287;
+	background: #6C0287;
+}
+
+.header__button:focus {
+	background: #6C0287;
+	border-color: #6C0287;
+}
+
+.header__button:active {
+	background: #640AA3;
+	border-color: #000000;
 }

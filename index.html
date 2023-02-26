@@ -11,6 +11,7 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#373b3c">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="css/icons-font.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>GO</title>
 </head>
@@ -51,9 +52,18 @@
 					</div>
 				</div>
 				<a href="#booking" class="hero__link">Забронировать</a>
-				<a href="#services" class="hero__button" type="button">
-					<span class="hero__button-arrow"></span>
-				</a>
+				<div class="hero__button-block">
+					<a href="#services" class="hero__button button">
+						<svg class="button__svg" width="97" height="97" viewBox="0 0 97 97" fill="currentColor"
+							xmlns="http://www.w3.org/2000/svg">
+							<circle class="button__circle" cx="48.5" cy="48.5" r="48" stroke="currentColor" />
+							<rect class="button__rect" x="34.4255" y="43.9161" width="1.82001" height="20.0201"
+								transform="rotate(-44.9975 34.4255 43.9161)" fill="currentColor" />
+							<rect class="button__rect" x="48.5807" y="58.0737" width="1.82001" height="20.0201"
+								transform="rotate(-134.997 48.5807 58.0737)" fill="currentColor" />
+						</svg>
+					</a>
+				</div>
 			</div>
 		</section>
 		<section class="services" id="services">
@@ -216,8 +226,8 @@
 						</div>
 						<div class="fieldset-form-date__block-info-name">
 							<label class="fieldset-form-date__label" for="name">Имя</label>
-							<input class="form__input form__input-info" type="text" name="name" required id="name">
-							<label class="fieldset-form-date__label" for="surname">Фамилия</label>
+							<input class="form__input form__input-info" type="text" name="name" required id="name" ">
+							<label class=" fieldset-form-date__label" for="surname">Фамилия</label>
 							<input class="form__input form__input-info" type="text" name="surname" required
 								id="surname">
 						</div>
@@ -312,11 +322,36 @@
 			<div class="container">
 				<h2 class="faq__title title">Частые вопросы</h2>
 				<ul class="faq__list">
-					<li class="faq__item">Можно ли забронировать комнату онлайн?</li>
-					<li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
-					<li class="faq__item">Какая комната самая популярная?</li>
-					<li class="faq__item">Как получить VIP карту?</li>
-					<li class="faq__item">Какая комната самая популярная?</li>
+					<li class="faq__item">
+						<div class="faq__row">
+							<p class="faq__text">Можно ли забронировать комнату онлайн?</p>
+							<span class="faq__bth faq__bth_style_purple"></span>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__row">
+							<p class="faq__text">Могут ли мне вернуть деньги за бронь?</p>
+							<span class="faq__bth faq__bth_style_white"></span>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__row">
+							<p class="faq__text">Какая комната самая популярная?</p>
+							<span class="faq__bth faq__bth_style_purple"></span>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__row">
+							<p class="faq__text">Как получить VIP карту?</p>
+							<span class="faq__bth faq__bth_style_white"></span>
+						</div>
+					</li>
+					<li class="faq__item">
+						<div class="faq__row">
+							<p class="faq__text">Какая комната самая популярная?</p>
+							<span class="faq__bth faq__bth_style_purple"></span>
+						</div>
+					</li>
 				</ul>
 			</div>
 		</section>
@@ -339,23 +374,23 @@
 					<nav class="footer__navigation">
 						<ul class="social-list">
 							<li class="social-list__item">
-								<a class="social-list__icon-link" href="https://vk.com/" target="_blank">
-									<img class="social-list__icon" src="img/icon/vkontakte.svg" alt="Вконтакте">
+								<a class="social-list__icon-link _icon-vkontakte" href="https://vk.com/"
+									target="_blank">
 								</a>
 							</li>
 							<li class="social-list__item">
-								<a class="social-list__icon-link" href="https://web.telegram.org/z/" target="_blank">
-									<img class="social-list__icon" src="img/icon/Telegram.svg" alt="Телеграм">
+								<a class="social-list__icon-link _icon-telegram" href="https://web.telegram.org/z/"
+									target="_blank">
 								</a>
 							</li>
 							<li class="social-list__item">
-								<a class="social-list__icon-link" href="https://ru.pinterest.com" target="_blank">
-									<img class="social-list__icon" src="img/icon/Pinterest.svg" alt="Пинтерест">
+								<a class="social-list__icon-link _icon-pinterest" href="https://ru.pinterest.com"
+									target="_blank">
 								</a>
 							</li>
 							<li class="social-list__item">
-								<a class="social-list__icon-link" href="https://www.stumbleupon.com" target="_blank">
-									<img class="social-list__icon" src="img/icon/stumbleupon.svg" alt="StumbleUpon">
+								<a class="social-list__icon-link _icon-stumbleupon" href="https://www.stumbleupon.com"
+									target="_blank">
 								</a>
 							</li>
 						</ul>
