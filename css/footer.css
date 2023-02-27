@@ -39,6 +39,11 @@
 
 .address__link {
 	color: #fff;
+	transition: color 0.3s ease 0s;
+}
+
+.address__link:hover {
+	color: #CD06FF;
 }
 
 
@@ -87,12 +92,13 @@
 .social-list__icon-link {
 	display: inline-block;
 	outline: 1px solid #ffffff00;
+	transition: color 0.3s ease 0s, outline 0.7s ease;
 }
 
 
 
 .social-list__icon-link:hover {
-	color: #EADEED;
+	color: #cc00ff;
 }
 
 .social-list__icon-link:focus {
@@ -128,6 +134,7 @@
 .footer__link {
 	display: flex;
 	justify-content: end;
+	transition: color 0.3s ease;
 }
 
 .footer__link:hover {

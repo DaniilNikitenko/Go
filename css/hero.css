@@ -88,18 +88,19 @@
 	text-transform: uppercase;
 	position: relative;
 	z-index: 5;
+	transition: border-color, background-color 0.3s ease;
 }
 
 .hero__link:hover {
-	background: #840AA3;
+	background-color: #840AA3;
 }
 
 .hero__link:focus {
-	background: #840AA3;
+	background-color: #840AA3;
 }
 
 .hero__link:active {
-	background: #640AA3;
+	background-color: #640AA3;
 
 }
 
@@ -111,17 +112,22 @@
 	bottom: 90px;
 	transform: translateX(50%);
 	z-index: 5;
+	transition: outline 0.3s ease;
 }
 
 .button__svg {
 	fill: transparent;
+	transition: fill 0.5s ease;
 }
 
 .button__circle {
-	stroke: #fff
+	stroke: #fff;
+	transition: stroke 0.3s ease;
 }
 
-.button__rect {}
+.button__rect {
+	transition: color 0.3s ease;
+}
 
 
 .button__svg:hover {

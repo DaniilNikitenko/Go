@@ -35,7 +35,7 @@
 	height: 46px;
 	border-radius: 50%;
 	position: relative;
-	transition: all 0.3s ease 0s;
+	transition: border-color, background-color 0.2s ease 0s;
 }
 
 .faq__bth_style_purple {
@@ -56,7 +56,6 @@
 	position: absolute;
 	top: 50%;
 	left: 25%;
-
 }
 
 .faq__bth_style_purple:before,
@@ -69,13 +68,13 @@
 
 }
 
-.faq__bth_style_purple:hover {
+.faq__item:hover .faq__bth_style_purple {
 	background-color: #6C0287;
 	border-color: #6C0287;
 }
 
-.faq__bth_style_purple:hover.faq__bth:before,
-.faq__bth_style_purple:hover.faq__bth:after {
+.faq__item:hover .faq__bth_style_purple.faq__bth:before,
+.faq__item:hover .faq__bth_style_purple.faq__bth:after {
 	background-color: #fff;
 
 }
@@ -105,13 +104,13 @@
 	transform: rotate(90deg);
 }
 
-.faq__bth_style_white:hover {
+.faq__item:hover .faq__bth_style_white {
 	background-color: #fff;
 	border-color: #ffffff;
 }
 
-.faq__bth_style_white:hover.faq__bth_style_white:before,
-.faq__bth_style_white:hover.faq__bth_style_white:after {
+.faq__item:hover .faq__bth_style_white.faq__bth_style_white:before,
+.faq__item:hover .faq__bth_style_white.faq__bth_style_white:after {
 	background-color: #440F51;
 }
 
