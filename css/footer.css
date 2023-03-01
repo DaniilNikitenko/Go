@@ -43,7 +43,7 @@
 }
 
 .address__link:hover {
-	color: #CD06FF;
+	color: var(--purple-color);
 }
 
 
@@ -103,11 +103,11 @@
 
 .social-list__icon-link:focus {
 	color: #EADEED;
-	outline: 1px solid #CD06FF;
+	outline: 1px solid var(--purple-color);
 }
 
 .social-list__icon-link:active {
-	color: #CD06FF;
+	color: var(--purple-color);
 }
 
 
@@ -138,5 +138,5 @@
 }
 
 .footer__link:hover {
-	color: #CD06FF;
+	color: var(--purple-color);
 }

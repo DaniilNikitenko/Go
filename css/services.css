@@ -13,15 +13,31 @@
 	display: flex;
 	flex-wrap: wrap;
 	row-gap: 40px;
-	column-gap: 20px;
+	column-gap: var(--gap);
+	padding-bottom: 70px;
 }
 
 .services__item {
 	display: flex;
-	flex: 0 1 380px;
+	flex: 0 1 calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
 	padding: 166px 40px 6px;
 	transition: transform 0.3s ease;
 }
+
+.services__item:nth-child(3n-1) {
+	transform: translateY(70px);
+}
+
+.services__item:hover {
+	transform: scale(1.10);
+}
+
+.services__item:nth-child(3n-1):hover {
+	transform: scale(1.10) translateY(70px);
+
+}
+
+
 
 .services__item:hover {
 	transform: scale(1.10);

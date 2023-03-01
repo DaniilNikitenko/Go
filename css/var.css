@@ -1,0 +1,14 @@
+:root {
+	--main-color: #fff;
+	--purple-color: #CD06FF;
+	--purple-dark: #6C0287;
+	--gap: 20px;
+}
+
+.services {
+	--cart-count: 3;
+}
+
+.halls {
+	--cart-count: 2;
+}

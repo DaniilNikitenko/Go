@@ -57,7 +57,7 @@
 .about__quote:before {
 	content: "\201c";
 	font-weight: 900;
-	color: #6C0287;
+	color: var(--purple-dark);
 	position: absolute;
 	left: 0;
 	top: -7px;
@@ -66,7 +66,7 @@
 .about__quote:after {
 	content: "\201d";
 	font-weight: 900;
-	color: #6C0287;
+	color: var(--purple-dark);
 }
 
 .about__creator {

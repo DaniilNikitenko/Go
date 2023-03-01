@@ -22,13 +22,13 @@
 }
 
 .menu__item:hover {
-	color: #CD06FF;
+	color: var(--purple-color);
 }
 
 .menu__link {}
 
 .header__button {
-	border: 3px solid #CD06FF;
+	border: 3px solid var(--purple-color);
 	border-radius: 10px;
 	padding: 12px 32px;
 	font-weight: 700;
@@ -42,16 +42,16 @@
 }
 
 .header__button:hover {
-	border-color: #6C0287;
-	background-color: #6C0287;
+	border-color: var(--purple-dark);
+	background-color: var(--purple-dark);
 }
 
 .header__button:focus {
-	background-color: #6C0287;
-	border-color: #6C0287;
+	background-color: var(--purple-dark);
+	border-color: var(--purple-dark);
 }
 
 .header__button:active {
-	background-color: #640AA3;
+	background-color: var(--purple-dark);
 	border-color: #000000;
 }
