@@ -103,6 +103,7 @@
 
 	.services__list {
 		row-gap: 20px;
+		padding: 0;
 	}
 
 	.services__title {

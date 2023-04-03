@@ -114,198 +114,197 @@
 				</ul>
 			</div>
 		</section>
-		<!-- 
-			<section class="halls" id="ourHalls">
-				<div class="container">
-					<h2 class="halls__title title">
-						Наши залы
-					</h2>
-					<ul class="halls__list">
-						<li class="halls__item halls__item_bg_80s">
-							<a class="halls__link" href="halls/vibes.html">
-								80’s vibes
-							</a>
-						</li>
-						<li class="halls__item halls__item_bg_star-wars">
-							<a class="halls__link" href="halls/starwars.html">
-								Star Wars
-							</a>
-						</li>
+		<section class="halls" id="ourHalls">
+			<div class="container">
+				<h2 class="halls__title title">
+					Наши залы
+				</h2>
+				<ul class="halls__list">
+					<li class="halls__item halls__item_bg_80s">
+						<a class="halls__link" href="halls/vibes.html">
+							80’s vibes
+						</a>
+					</li>
+					<li class="halls__item halls__item_bg_star-wars">
+						<a class="halls__link" href="halls/starwars.html">
+							Star Wars
+						</a>
+					</li>
 
-						<li class="halls__item halls__item_bg_wild-west">
-							<a class="halls__link" href="halls/wildwest.html">
-								Wild west
-							</a>
-						</li>
-						<li class="halls__item halls__item_bg_neon-style">
-							<a class="halls__link" href="halls/neon.html">
-								Neon Style
-							</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section class="reservation" id="booking">
-				<div class="container reservation__container">
-					<h2 class="reservation__title title">
-						Забронировать зал просто
-					</h2>
-					<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-						<fieldset class="fieldset-form-halls">
-							<legend class="legend">Выбери зал</legend>
-							<div class="fieldset-form-halls__block">
-								<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
-									value="80's vibes" id="80's-vibes">
-								<label class="fieldset-form-halls__label" for="80's-vibes">80's vibes</label>
+					<li class="halls__item halls__item_bg_wild-west">
+						<a class="halls__link" href="halls/wildwest.html">
+							Wild west
+						</a>
+					</li>
+					<li class="halls__item halls__item_bg_neon-style">
+						<a class="halls__link" href="halls/neon.html">
+							Neon Style
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="reservation" id="booking">
+			<div class="container reservation__container">
+				<h2 class="reservation__title title">
+					Забронировать зал просто
+				</h2>
+				<form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+					<fieldset class="fieldset-form-halls">
+						<legend class="legend">Выбери зал</legend>
+						<div class="fieldset-form-halls__block">
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="80's vibes" id="80's-vibes">
+							<label class="fieldset-form-halls__label" for="80's-vibes">80's vibes</label>
 
-								<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
-									value="star wars" id="star-wars">
-								<label class="fieldset-form-halls__label" for="star-wars">star wars</label>
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="star wars" id="star-wars">
+							<label class="fieldset-form-halls__label" for="star-wars">star wars</label>
 
-								<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
-									value="wild west" id="wild-west">
-								<label class="fieldset-form-halls__label" for="wild-west">wild west</label>
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="wild west" id="wild-west">
+							<label class="fieldset-form-halls__label" for="wild-west">wild west</label>
 
-								<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
-									value="neon style" id="neon-style">
-								<label class="fieldset-form-halls__label" for="neon-style">neon style</label>
+							<input class="fieldset-form-halls__input visually-hidden" type="radio" name="halls"
+								value="neon style" id="neon-style">
+							<label class="fieldset-form-halls__label" for="neon-style">neon style</label>
+						</div>
+
+					</fieldset>
+					<fieldset class="fieldset-form-set">
+						<legend class="legend">Собери набор развлечений</legend>
+						<div class="fieldset-form-set__row">
+							<fieldset class="fieldset-form-set__block">
+								<legend class="fieldset-form-set__legend legend">Приставка:</legend>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix"
+										value="PS">PlayStation 5
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix" value="Sega">Sega
+									Mega Drive
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix"
+										value="Xbox">X-box
+									One S
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="radio" name="prefix"
+										value="Dendy">Dendy
+								</label>
+							</fieldset>
+							<fieldset class="fieldset-form-set__block">
+								<legend class="fieldset-form-set__legend legend">Настольные игры</legend>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Jenda">Jenda
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Monopoly">Monopoly
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Manchin">Манчкин
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="games"
+										value="Dendy">Alias
+								</label>
+							</fieldset>
+							<fieldset class="fieldset-form-set__block">
+								<legend class="fieldset-form-set__legend legend">Дополнительно</legend>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="additionally"
+										value="karaoke">Караоке
+								</label>
+								<label class="fieldset-form-set__label">
+									<input class="fieldset-form-set__input" type="checkbox" name="additionally"
+										value="VR">VR
+								</label>
+							</fieldset>
+						</div>
+					</fieldset>
+
+					<fieldset class="fieldset-form-date">
+						<legend class="legend">Выбери дату и время</legend>
+						<div class="fieldset-form-date-row">
+							<div class="fieldset-form-date__block-time">
+								<input class="form__input form__input_date" type="date" name="data" required>
+								<input class="form__input form__input_date" type="time" name="time" required>
+								<input class="form__input form__input_count" placeholder="Сколько человек" type="number"
+									name="count" required>
 							</div>
-						</fieldset>
-						<fieldset class="fieldset-form-set">
-							<legend class="legend">Собери набор развлечений</legend>
-							<div class="fieldset-form-set__row">
-								<fieldset class="fieldset-form-set__block">
-									<legend class="fieldset-form-set__legend legend">Приставка:</legend>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="radio" name="prefix"
-											value="PS">PlayStation 5
-									</label>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="radio" name="prefix"
-											value="Sega">Sega
-										Mega Drive
-									</label>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="radio" name="prefix"
-											value="Xbox">X-box
-										One S
-									</label>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="radio" name="prefix"
-											value="Dendy">Dendy
-									</label>
-								</fieldset>
-								<fieldset class="fieldset-form-set__block">
-									<legend class="fieldset-form-set__legend legend">Настольные игры</legend>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="checkbox" name="games"
-											value="Jenda">Jenda
-									</label>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="checkbox" name="games"
-											value="Monopoly">Monopoly
-									</label>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="checkbox" name="games"
-											value="Manchin">Манчкин
-									</label>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="checkbox" name="games"
-											value="Dendy">Alias
-									</label>
-								</fieldset>
-								<fieldset class="fieldset-form-set__block">
-									<legend class="fieldset-form-set__legend legend">Дополнительно</legend>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="checkbox" name="additionally"
-											value="karaoke">Караоке
-									</label>
-									<label class="fieldset-form-set__label">
-										<input class="fieldset-form-set__input" type="checkbox" name="additionally"
-											value="VR">VR
-									</label>
-								</fieldset>
-							</div>
-						</fieldset>
-						<fieldset class="fieldset-form-date">
-							<legend class="legend">Выбери дату и время</legend>
-							<div class="fieldset-form-date-row">
-								<div class="fieldset-form-date__block-time">
-									<input class="form__input form__input_date" type="date" name="data" required>
-									<input class="form__input form__input_date" type="time" name="time" required>
-									<input class="form__input form__input_count" placeholder="Сколько человек"
-										type="number" name="count" required>
-								</div>
-								<div class="fieldset-form-date__block-info-name">
-									<label class="fieldset-form-date__label" for="name">Имя</label>
-									<input class="form__input form__input-info" type="text" name="name" required
-										id="name" ">
+							<div class="fieldset-form-date__block-info-name">
+								<label class="fieldset-form-date__label" for="name">Имя</label>
+								<input class="form__input form__input-info" type="text" name="name" required id="name" ">
 								<label class=" fieldset-form-date__label" for="surname">Фамилия</label>
-									<input class="form__input form__input-info" type="text" name="surname" required
-										id="surname">
-								</div>
-								<div class="fieldset-form-date__block-info-contact">
-									<label class="fieldset-form-date__label" for="tel">Телефон</label>
-									<input class="form__input form__input-info" type="tel" name="tel" required id="tel">
-									<label class="fieldset-form-date__label" for="email">E-mail</label>
-									<input class="form__input form__input-info" type="email" name="email" required
-										id="email">
-								</div>
-								<div class="form__bth-row">
-									<button class="form__bth" type="submit">Забронировать</button>
-								</div>
+								<input class="form__input form__input-info" type="text" name="surname" required
+									id="surname">
 							</div>
-						</fieldset>
-					</form>
-				</div>
-			</section>
-			<section class="about" id="about">
-				<div class="container">
-					<h2 class="about__title title">О нас</h2>
-					<div class="about__row">
-						<ul class="about__list">
-							<li class="about__item card-1"></li>
-							<li class="about__item card-2"></li>
-							<li class="about__item card-3"></li>
-							<li class="about__item card-4"></li>
-							<li class="about__item card-5"></li>
-							<li class="about__item card-6"></li>
-							<li class="about__item card-7"></li>
-						</ul>
-						<div class="about__content">
-							<div class="about__paragraphs">
-								<p class="about__text">Для наших гостей мы создали концептуально новое игровое
-									пространство
-									виртуальной
-									реальности в
-									центральной
-									части города.</p>
-								<p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую
-									атмосферу
-									и
-									радовать Вас топовыми
-									игровыми
-									разработками со всего мира.</p>
+							<div class="fieldset-form-date__block-info-contact">
+								<label class="fieldset-form-date__label" for="tel">Телефон</label>
+								<input class="form__input form__input-info" type="tel" name="tel" required id="tel">
+								<label class="fieldset-form-date__label" for="email">E-mail</label>
+								<input class="form__input form__input-info" type="email" name="email" required
+									id="email">
+							</div>
+							<div class="form__bth-row">
+								<button class="form__bth" type="submit">Забронировать</button>
 							</div>
 						</div>
-						<div class="about__quote-block">
-							<blockquote class="about__blockquote">
-								<p class="about__quote">GAME OVER —
-									это место незабываемых впечатлений </p>
-							</blockquote>
-							<figure class="about__creator">
-								<img class="about__image-creator" src="img/creator.jpg"
-									alt="создатель игровой территории GAME OVER">
-								<figcaption class="about__figcaption">
-									<cite class="about__cite">Аркадий Абакшин,
-										создатель игровой
-										территории GAME OVER</cite>
-								</figcaption>
-							</figure>
-						</div>
+					</fieldset>
+				</form>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<h2 class="about__title title">О нас</h2>
+				<div class="about__row">
+					<ul class="about__list">
+						<li class="about__item card-1"></li>
+						<li class="about__item card-2"></li>
+						<li class="about__item card-3"></li>
+						<li class="about__item card-4"></li>
+						<li class="about__item card-5"></li>
+						<li class="about__item card-6"></li>
+						<li class="about__item card-7"></li>
+					</ul>
+					<div class="about__paragraphs">
+						<p class="about__text">Для наших гостей мы создали концептуально новое игровое
+							пространство
+							виртуальной
+							реальности в
+							центральной
+							части города.</p>
+						<p class="about__text">Каждый день мы стараемся создавать для вас самую лучшую игровую
+							атмосферу
+							и
+							радовать Вас топовыми
+							игровыми
+							разработками со всего мира.</p>
+					</div>
+					<div class="about__quote-block">
+						<blockquote class="about__blockquote">
+							<p class="about__quote">GAME OVER —
+								это место незабываемых впечатлений </p>
+						</blockquote>
+						<figure class="about__creator">
+							<img class="about__image-creator" src="img/creator.jpg"
+								alt="создатель игровой территории GAME OVER">
+							<figcaption class="about__figcaption">
+								<cite class="about__cite">Аркадий Абакшин,
+									создатель игровой
+									территории GAME OVER</cite>
+							</figcaption>
+						</figure>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
+		<!-- 
 			<section class="reviews" id="reviews">
 				<div class="container reviews__container">
 					<h2 class="reviews__title title">Отзывы посетителей</h2>

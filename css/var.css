@@ -33,4 +33,16 @@
 	:root {
 		--gap: 10px;
 	}
+
+	.about__list {
+		--width: 382px;
+		--height: 380px;
+	}
+}
+
+@media screen and (max-width:650px) {
+	.about__list {
+		--width: 280px;
+		--height: 280px;
+	}
 }

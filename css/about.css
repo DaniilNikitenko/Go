@@ -78,9 +78,7 @@
 
 .about__image {}
 
-.about__content {
-	grid-area: text-block;
-}
+.about__content {}
 
 .about__quote-block {
 	grid-area: quote;
@@ -89,6 +87,10 @@
 
 .about__paragraphs {
 	max-width: 437px;
+	grid-area: text-block;
+	display: flex;
+	flex-direction: column;
+	gap: 26px;
 }
 
 .about__text {
@@ -98,9 +100,7 @@
 	/* 28/20 */
 }
 
-.about__text:not(:last-child) {
-	margin-bottom: 26px;
-}
+
 
 .about__blockquote {
 	margin: 0;
@@ -151,7 +151,7 @@
 }
 
 .about__image-creator {
-	width: 80px;
+	min-width: 80px;
 	height: 80px;
 	border-radius: 50%;
 	object-fit: cover;
@@ -175,7 +175,7 @@
 		row-gap: 20px;
 		column-gap: 35px;
 		grid-template-columns: 425px 1fr;
-		grid-template-rows: 1fr 217px;
+		grid-template-rows: 1fr 173px;
 
 	}
 
@@ -200,11 +200,106 @@
 	}
 
 	.about__image-creator {
-		width: 70px;
+		min-width: 70px;
 		height: 70px;
 	}
 
-	.about__figcaption {
+	.about__cite {
 		font-size: 18px;
 	}
+}
+
+@media screen and (max-width:950px) {
+	.about {
+		padding-top: 57px;
+		padding-bottom: 30px;
+	}
+
+
+	.about__row {
+		row-gap: 30px;
+		column-gap: 28px;
+		grid-template-columns: 382px 1fr;
+		grid-template-rows: 1fr 184px;
+		grid-template-areas:
+			"image text-block"
+			"quote quote";
+	}
+
+	.about__list {}
+
+	.about__title {
+		margin-bottom: 30px;
+	}
+
+	.about__paragraphs {
+		gap: 20px;
+		align-self: center;
+	}
+
+	.about__text {
+		font-size: 16px;
+		line-height: 1.33;
+	}
+
+	.about__quote {
+		font-size: 32px;
+		margin-bottom: 9px;
+	}
+
+
+	.about__blockquote {
+		padding-left: 20px
+	}
+
+	.about__quote-block {}
+
+
+}
+
+@media screen and (max-width:650px) {
+	.about {
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+
+	.about__title {
+		margin-bottom: 15px;
+	}
+
+
+	.about__row {
+		row-gap: 20px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 127px 280px 1fr;
+		grid-template-areas:
+			"text-block"
+			"image"
+			"quote";
+	}
+
+	.about__cite {
+		font-size: 12px;
+	}
+
+	.about__image-creator {
+		min-width: 56px;
+		height: 56px;
+	}
+
+	.about__creator {
+		gap: 11px;
+	}
+
+	.about__text {
+		font-size: 12px;
+		line-height: 1.33;
+	}
+
+	.about__quote {
+		font-size: 18px;
+		margin-bottom: 16px;
+	}
+
+
 }
