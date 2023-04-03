@@ -4,21 +4,90 @@
 }
 
 .about__title {
-	margin-bottom: 50px;
+	margin-bottom: 48px;
 }
 
 .about__row {
+	display: grid;
+	row-gap: 43px;
+	column-gap: 80px;
+	grid-template-columns: 600px 1fr;
+	grid-template-rows: 222px 325px;
+	grid-template-areas:
+		"image text-block"
+		"image quote";
+}
+
+.about__list {
 	display: flex;
-	gap: 80px;
+	flex-wrap: wrap;
+	max-width: var(--width);
+	width: 100%;
+	max-height: var(--height);
+	height: 100%;
+	font-size: 0px;
+	grid-area: image;
+}
+
+.about__item {
+	background-size: cover;
+	background-position: center;
+}
+
+.card-1 {
+	flex: 0 1 calc(var(--width)*0.5);
+	height: calc(var(--height)*0.346);
+	background-image: url('../img/about/01.jpg');
+}
+
+.card-2 {
+	flex: 0 1 calc(var(--width)*0.5);
+	height: calc(var(--height)*0.346);
+	background-image: url('../img/about/02.jpg');
+}
+
+.card-3 {
+	flex: 0 1 calc(var(--width)*0.273);
+	height: calc(var(--height)*0.376);
+	background-image: url('../img/about/03.jpg');
+}
+
+.card-4 {
+	flex: 0 1 calc(var(--width)*0.3);
+	height: calc(var(--height)*0.376);
+	background-image: url('../img/about/04.jpg');
+}
+
+.card-5 {
+	flex: 0 1 calc(var(--width)*0.426);
+	height: calc(var(--height)*0.376);
+	background-image: url('../img/about/05.jpg');
+}
+
+.card-6 {
+	flex: 0 1 calc(var(--width)*0.633);
+	height: calc(var(--height)*0.268);
+	background-image: url('../img/about/06.jpg');
+}
+
+.card-7 {
+	flex: 0 1 calc(var(--width)*0.366);
+	height: calc(var(--height)*0.268);
+	background-image: url('../img/about/07.jpg');
 }
 
 .about__image {}
 
-.about__content {}
+.about__content {
+	grid-area: text-block;
+}
+
+.about__quote-block {
+	grid-area: quote;
+}
 
 
 .about__paragraphs {
-	margin-bottom: 48px;
 	max-width: 437px;
 }
 
@@ -51,7 +120,6 @@
 	line-height: 1.13;
 	/* 50/44 */
 	text-transform: uppercase;
-	white-space: pre-line;
 }
 
 .about__quote:before {
@@ -95,4 +163,48 @@
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 1.4;
+}
+
+@media screen and (max-width:1300px) {
+	.about {
+		padding-top: 70px;
+		padding-bottom: 35px;
+	}
+
+	.about__row {
+		row-gap: 20px;
+		column-gap: 35px;
+		grid-template-columns: 425px 1fr;
+		grid-template-rows: 1fr 217px;
+
+	}
+
+	.about__title {
+		margin-bottom: 26px;
+	}
+
+	.about__paragraphs {}
+
+	.about__text {
+		font-size: 18px;
+	}
+
+	.about__quote {
+		font-size: 30px;
+		margin-bottom: 13px;
+	}
+
+	.about__creator {
+		gap: 35px;
+		padding: 0;
+	}
+
+	.about__image-creator {
+		width: 70px;
+		height: 70px;
+	}
+
+	.about__figcaption {
+		font-size: 18px;
+	}
 }

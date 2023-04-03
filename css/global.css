@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
 	position: relative;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -83,4 +84,39 @@ iframe {
 	line-height: 1.25;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+@media screen and (max-width:1300px) {
+	.container {
+		max-width: 964px;
+	}
+
+	.title {
+		font-size: 30px;
+		line-height: 1.33;
+	}
+}
+
+@media screen and (max-width:950px) {
+	.container {
+		max-width: 765px;
+		padding: 0 40px;
+	}
+
+	.title {
+		font-size: 24px;
+		line-height: 1.5;
+	}
+}
+
+@media screen and (max-width:650px) {
+	.container {
+		max-width: 320px;
+		padding: 0 20px;
+	}
+
+	.title {
+		font-size: 14px;
+		line-height: 1.29;
+	}
 }

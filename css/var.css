@@ -12,3 +12,25 @@
 .halls {
 	--cart-count: 2;
 }
+
+.about__list {
+	--width: 600px;
+	--height: 596px;
+}
+
+@media screen and (max-width:1300px) {
+	.about__list {
+		--width: 420.26px;
+		--height: 417.66px;
+	}
+}
+
+@media screen and (max-width:950px) {
+	.services {
+		--cart-count: 2;
+	}
+
+	:root {
+		--gap: 10px;
+	}
+}

@@ -4,12 +4,10 @@
 }
 
 .reservation__title {
-	margin-bottom: 50px;
+	margin-bottom: 45px;
 }
 
-.reservation__form {
-	padding: 0 22px;
-}
+
 
 /*radio-halls*/
 
@@ -28,17 +26,19 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 1.17;
-}
-
-.legend-fieldset {
 	margin-bottom: 40px;
 	text-align: center;
 }
 
 
 
+
+
 .fieldset-form-halls__label {
 	flex: 0 1 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: #000;
 	font-weight: 700;
 	font-size: 30px;
@@ -46,9 +46,8 @@
 	user-select: none;
 	background-color: #fff;
 	border-radius: 8px;
-	padding: 6px 15px;
+	min-height: 55px;
 	text-transform: uppercase;
-	text-align: center;
 	cursor: pointer;
 	border: 3px solid #ffffff;
 	transition: background-color, border-color 0.3s ease;
@@ -80,14 +79,16 @@
 /*set*/
 
 .fieldset-form-set {
-	margin-bottom: 67px;
+	margin-bottom: 60px;
 }
 
 
 
 .fieldset-form-set__row {
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 280px 300px 300px;
+	justify-content: end;
+	gap: 100px;
 }
 
 
@@ -99,7 +100,7 @@
 .fieldset-form-set__block {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	justify-self: self-start;
 }
 
 .fieldset-form-set__label {
@@ -109,7 +110,7 @@
 }
 
 .fieldset-form-set__label:not(:last-child) {
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 }
 
 .fieldset-form-set__input {
@@ -133,13 +134,15 @@
 
 /*date and time*/
 
-.fieldset-form-date {
-	display: flex;
-	max-width: 980px;
-	justify-content: space-between;
-	gap: 50px;
-	margin: 0 auto 40px;
-	align-items: center;
+.fieldset-form-date {}
+
+.fieldset-form-date-row {
+	display: grid;
+	grid-template-columns: 300px 280px 300px;
+	grid-template-rows: 1fr 60px;
+	column-gap: 50px;
+	row-gap: 40px;
+	justify-content: center;
 }
 
 
@@ -207,13 +210,15 @@
 }
 
 .form__bth-row {
-	display: flex;
-	justify-content: flex-end;
-	padding-right: 100px;
+	grid-column: 3/4;
 }
 
 .form__bth {
-	padding: 16px 50px;
+	min-width: 300px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: var(--purple-dark);
 	font-weight: 700;
 	font-size: 22px;
@@ -222,10 +227,10 @@
 	border: none;
 	border-radius: 10px;
 	text-transform: uppercase;
-	align-self: flex-end;
 	border: 3px solid #ffffff;
 	outline: none;
 	transition: background-color, border-color, 0.25s ease;
+	box-shadow: 0 0 20px #fff;
 }
 
 .form__bth:hover {
@@ -241,4 +246,51 @@
 .form__bth:active {
 	background-color: #EADEED;
 	border-color: #EADEED;
+}
+
+@media screen and (max-width:1300px) {
+	.reservation {
+		padding: 60px 0;
+	}
+
+	.reservation__title {
+		margin-bottom: 45px;
+	}
+
+	.legend {
+		margin-bottom: 26px;
+	}
+
+	.fieldset-form-halls__label {
+		min-height: 44px;
+		font-size: 20px;
+		border-radius: 6px;
+	}
+
+	.fieldset-form-set__legend {
+		font-size: 24px;
+		margin-bottom: 23px;
+		text-align: left;
+	}
+
+	.fieldset-form-set__row {
+		display: grid;
+		grid-template-columns: 280px 298px 255px;
+		gap: 40px;
+	}
+
+	.fieldset-form-date-row {
+		display: grid;
+		grid-template-columns: 300px 251px 254px;
+		grid-template-rows: 1fr 50px;
+		column-gap: 50px;
+		row-gap: 40px;
+		justify-content: center;
+	}
+
+	.form__bth {
+		min-width: 254px;
+		height: 50px;
+		font-size: 18px;
+	}
 }

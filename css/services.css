@@ -1,11 +1,11 @@
 .services {
-	padding: 50px 0;
+	padding: 45px 0 50px;
 }
 
 .container {}
 
 .services__title {
-	max-width: 710px;
+	max-width: 780px;
 	margin: 0 auto 41px;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .services__item {
-	display: flex;
+
 	flex: 0 1 calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
 	padding: 166px 40px 6px;
 	transition: transform 0.3s ease;
@@ -71,4 +71,81 @@
 
 .services__item_bg_sony {
 	background: url('../img/services/sony.jpg') no-repeat;
+}
+
+@media screen and (max-width:1300px) {
+	.services {
+		padding: 40px 0 35px;
+	}
+
+	.services__list {
+		row-gap: 30px;
+	}
+
+	.services__title {
+		max-width: 600px;
+		margin-bottom: 41px;
+	}
+
+	.services__item {
+		padding: 114px 0px 2px 20px;
+	}
+
+	.services__item:nth-child(3n-1) {
+		transform: translateY(53px);
+	}
+}
+
+@media screen and (max-width:950px) {
+	.services {
+		padding-bottom: 30px;
+	}
+
+	.services__list {
+		row-gap: 20px;
+	}
+
+	.services__title {
+		margin-bottom: 30px;
+	}
+
+	.services__item {
+		padding: 132px 0px 12px 30px;
+		transform: translate(0, 0);
+	}
+
+	.services__item:nth-child(3n-1) {
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width:650px) {
+	.services {
+		padding-top: 23px;
+		padding-bottom: 15px;
+	}
+
+	.services__list {
+		gap: var(--gap);
+	}
+
+	.services__title {
+		margin-bottom: 30px;
+	}
+
+	.services__item {
+		min-height: 75px;
+		padding: 30px 10px 3px 10px;
+		transform: translate(0, 0);
+		background-size: cover;
+		background-position: center;
+	}
+
+	.services__item:nth-child(3n-1) {
+		transform: translateY(0px);
+	}
+
+	.list__text {
+		font-size: 10px;
+	}
 }
