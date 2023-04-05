@@ -2,8 +2,6 @@
 	padding: 45px 0 50px;
 }
 
-.container {}
-
 .services__title {
 	max-width: 780px;
 	margin: 0 auto 41px;
@@ -18,7 +16,6 @@
 }
 
 .services__item {
-
 	flex: 0 1 calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
 	padding: 166px 40px 6px;
 	transition: transform 0.3s ease;
@@ -29,19 +26,13 @@
 }
 
 .services__item:hover {
-	transform: scale(1.10);
+	transform: scale(1.1);
 }
 
 .services__item:nth-child(3n-1):hover {
-	transform: scale(1.10) translateY(70px);
-
+	transform: scale(1.1) translateY(70px);
 }
 
-
-
-.services__item:hover {
-	transform: scale(1.10);
-}
 
 .list__text {
 	line-height: 1.4;
@@ -94,6 +85,10 @@
 	.services__item:nth-child(3n-1) {
 		transform: translateY(53px);
 	}
+
+	.services__item:nth-child(3n-1):hover {
+		transform: scale(1.10) translateY(0px);
+	}
 }
 
 @media screen and (max-width:950px) {
@@ -111,8 +106,8 @@
 	}
 
 	.services__item {
-		padding: 132px 0px 12px 30px;
-		transform: translate(0, 0);
+		padding: 132px 30px 12px 30px;
+		min-height: 200px;
 	}
 
 	.services__item:nth-child(3n-1) {
@@ -126,12 +121,12 @@
 		padding-bottom: 15px;
 	}
 
-	.services__list {
-		gap: var(--gap);
+	.services__title {
+		margin-bottom: 15px;
 	}
 
-	.services__title {
-		margin-bottom: 30px;
+	.services__list {
+		gap: var(--gap);
 	}
 
 	.services__item {
