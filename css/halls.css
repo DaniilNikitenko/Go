@@ -50,6 +50,11 @@
 	color: #fff;
 	text-transform: uppercase;
 	width: 252px;
+	transition: color 0.3s;
+}
+
+.halls__link:hover {
+	color: var(--purple-color);
 }
 
 @media screen and (max-width:1300px) {
