@@ -11,6 +11,21 @@
 
 .header__button-menu {
 	display: none;
+	color: var(--purple-dark);
+	transition: color 0.2s;
+}
+
+.header__button-menu:hover {
+	color: var(--purple-color);
+}
+
+.header__button-menu:focus {
+	outline: 1px solid var(--purple-color);
+}
+
+
+.header__button-menu:active {
+	color: #840AA3;
 }
 
 .header__logo {
