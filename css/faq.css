@@ -32,6 +32,10 @@
 	background-color: transparent;
 }
 
+.faq__button:focus {
+	outline: 2px solid var(--purple-color);
+}
+
 
 
 .faq__text {
@@ -242,6 +246,8 @@
 	}
 
 }
+
+
 
 @media screen and (max-width:950px) {
 	.faq {

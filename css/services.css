@@ -87,7 +87,7 @@
 	}
 
 	.services__item:nth-child(3n-1):hover {
-		transform: scale(1.10) translateY(0px);
+		transform: scale(1.10) translateY(53px);
 	}
 }
 
@@ -112,6 +112,10 @@
 
 	.services__item:nth-child(3n-1) {
 		transform: translateY(0px);
+	}
+
+	.services__item:nth-child(3n-1):hover {
+		transform: scale(1.10) translateY(0px);
 	}
 }
 

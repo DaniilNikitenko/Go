@@ -16,12 +16,23 @@
 
 .halls__item {
 	text-align: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	min-height: 349px;
+}
+
+.halls__link {
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 1.14;
+	color: #fff;
+	text-transform: uppercase;
+	transition: color 0.3s;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	min-height: 349px;
-	background-size: contain;
-	background-repeat: no-repeat;
+	padding: 95px 164px;
 }
 
 .halls__item_bg_80s {
@@ -41,17 +52,6 @@
 	background-image: url("../img/Halls/neon-style.jpg");
 }
 
-
-.halls__link {
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 70px;
-	line-height: 1.14;
-	color: #fff;
-	text-transform: uppercase;
-	width: 252px;
-	transition: color 0.3s;
-}
 
 .halls__link:hover {
 	color: var(--purple-color);
@@ -74,6 +74,7 @@
 
 	.halls__link {
 		font-size: 50px;
+		padding: 76px 96px;
 	}
 
 }
@@ -91,7 +92,7 @@
 
 	.halls__link {
 		font-size: 40px;
-		width: 129px;
+		padding: 62px 55px 50px;
 	}
 
 }
@@ -117,6 +118,6 @@
 
 	.halls__link {
 		font-size: 26px;
-		width: 80px;
+		padding: 54px 98px;
 	}
 }
