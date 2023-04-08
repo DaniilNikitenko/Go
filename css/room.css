@@ -315,7 +315,7 @@
 
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:620px) {
 	.header__link {
 		font-size: 12px;
 		gap: 6;
