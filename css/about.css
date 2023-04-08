@@ -249,7 +249,8 @@
 
 
 	.about__blockquote {
-		padding-left: 16px
+		padding-left: 16px;
+		padding-right: 16px;
 	}
 
 	.about__quote-block {}
